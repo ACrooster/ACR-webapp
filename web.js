@@ -1,0 +1,1 @@
+../../go/ACR-framework/bin/web.js
