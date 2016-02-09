@@ -2,44 +2,53 @@
 
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.green&#45;light_green.min.css" /> -->
-    <link rel="stylesheet" href="material.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.green&#45;light_green.min.css" />
+    <!-- <link rel="stylesheet" href="material.min.css" /> -->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-    <script defer src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.1.1/material.min.js"/></script>
 </head>
 
 <body>
     <style>
+	html {
+		font-size: 1vw;
+	}
+	
 	.class-card.mdl-card {
-	    width: 320px;
-	    height: 96px;
-	    margin: 16px;
-	    background: #ffffff
+	    width: 16rem;
+		min-height: 0;
+	    height: 6rem;
+	    margin: 1rem;
+	    background: #ffffff;
 	}
 
 	.class-changed.mdl-card {
-	    background: #2196f3
+	    background: #2196f3;
 	}
 	.class-cancelled.mdl-card {
-	    background: #ff5722
+	    background: #ff5722;
 	}
 	.class-free.mdl-card {
-	    background: #f5f5f5
+	    background: #f5f5f5;
 	}
 	.class-activity.mdl-card {
-	    background: #cddc39
+	    background: #cddc39;
 	}
 	.class-exam.mdl-card {
-	    background: #ff9800
+	    background: #ff9800;
+	}
+	
+	h4 {
+		font-size: 1.6rem;
 	}
 
 	.class-name {
-	    font-size: 24px;
+	    font-size: 1.5rem;
 	}
     </style>
 
-    <div id="schedule"></div>
-
+	<div id="schedule"/>
+	
     <script type="text/javascript" src="web.js" ></script>
 </body>
 
