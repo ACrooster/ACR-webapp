@@ -19,9 +19,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=devictial-scale=1">
-    <title>Rooster</title>
+    <!-- <meta name="description" content="A front&#45;end template that helps you build fast, modern mobile web apps."> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amstelveen College Rooster</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -44,11 +44,11 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.green-light_green.min.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="schedule.css"> -->
+    <link rel="stylesheet" href="schedule.css">
     <style>
     #view-source {
       position: fixed;
@@ -65,11 +65,11 @@
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
       <header class="demo-header mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Rooster</span>
+          <span class="mdl-layout-title mdl-color-text--white">Rooster</span>
           <div class="mdl-layout-spacer"></div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-              <i class="material-icons">search</i>
+              <i class="material-icons mdl-color-text--white">search</i>
             </label>
             <div class="mdl-textfield__expandable-holder">
               <input class="mdl-textfield__input" type="text" id="search">
@@ -77,7 +77,7 @@
             </div>
           </div>
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
-            <i class="material-icons">more_vert</i>
+            <i class="material-icons mdl-color-text--white">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
             <li class="mdl-menu__item">About</li>
@@ -86,14 +86,20 @@
           </ul>
         </div>
       </header>
-      <div class="demo-drawer mdl-layout__drawer">
-        <nav class="demo-navigation mdl-navigation">
-          <a class="mdl-navigation__link mdl-color-text--grey-600" href=""><i class="mdl-color-text--grey-600 material-icons" role="presentation">access_time</i>Mijn Rooster</a>
-          <a class="mdl-navigation__link mdl-color-text--grey-600" href=""><i class="mdl-color-text--grey-600 material-icons" role="presentation">star</i>Vrienden</a>
-          <div class="mdl-layout-spacer"></div>
-          <a class="mdl-navigation__link mdl-color-text--grey-600" href=""><i class="mdl-color-text--grey-600 material-icons" role="presentation">settings</i>Settings</a>
-          <a class="mdl-navigation__link mdl-color-text--grey-600" href=""><i class="mdl-color-text--grey-600 material-icons" role="presentation">info</i>Over</a>
-        </nav>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--green-600">
+	  <header class="demo-drawer-header">
+	      <div class="demo-avatar-dropdown mdl-color-text--white">
+		  <span>Tim Huizinga</span>
+		  <div class="mdl-layout-spacer"></div>
+	      </div>
+	  </header>
+	  <nav class="demo-navigation mdl-navigation mdl-color--white">
+	      <a class="mdl-navigation__link mdl-color-text--grey-600" href=""><i class="mdl-color-text--grey-600 material-icons" role="presentation">access_time</i>Mijn Rooster</a>
+	      <a class="mdl-navigation__link mdl-color-text--grey-600" href=""><i class="mdl-color-text--grey-600 material-icons" role="presentation">star</i>Vrienden</a>
+	      <div class="mdl-layout-spacer"></div>
+	      <a class="mdl-navigation__link mdl-color-text--grey-600" href=""><i class="mdl-color-text--grey-600 material-icons" role="presentation">settings</i>Settings</a>
+	      <a class="mdl-navigation__link mdl-color-text--grey-600" href=""><i class="mdl-color-text--grey-600 material-icons" role="presentation">info</i>Over</a>
+	  </nav>
       </div>
       <main class="mdl-layout__content mdl-color--grey-100">
       <div id="schedule"></div>
@@ -102,12 +108,12 @@
 	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" id="code" type="text" /> <label class="mdl-textfield__label" for="code">Leerlingnummer</label></div>
 	  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="code_button">OK</button></form>
 
-      <form action="#" class="hidden" id="auth_form">
+      <form action="#" class="" id="auth_form">
 	  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"><input class="mdl-textfield__input" id="auth" type="text" /> <label class="mdl-textfield__label" for="auth">Authcode</label></div>
 	  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="auth_button">OK</button></form>
       </main>
     </div>
     <script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
-    <!-- <script type="text/javascript" src="web.js" ></script></div> -->
+    <script type="text/javascript" src="web.js" ></script></div>
   </body>
 </html>
